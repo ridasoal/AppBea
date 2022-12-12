@@ -36,8 +36,11 @@ public class App {
   case 3:  animal.get(0).setNumInsensibilizacao(1); System.out.println(indice);
   break;
   //3 aumenta numer0 de insensibilizações
+
+  //parar abate
   case 0: abate = false; break;
 
+  //retorno caso não acerte comando
   default: System.out.println("Não é um comando válido.");
    }
   }
