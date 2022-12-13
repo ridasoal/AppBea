@@ -24,31 +24,35 @@ public class App {
   //System.out.println("resposta errada"); 
     
   while(abate == true){
-  System.out.println("Digite outro comando(número): 2 para novo animal, 3 adicionar insensibilização");
+  System.out.println("Digite outro comando(número): ");
   teclado = scan.nextInt();
-  switch (teclado){
+  switch (teclado){//2 aumenta numero de animais
     case 2: animal.add(new Animais());System.out.println(indice); indice++; System.out.println(indice); 
   break;
-  //2 aumenta numero de animais
   
-    case 3:  animal.get(0).setNumInsensibilizacao(1); System.out.println(indice);
+//3 aumenta numer0 de insensibilizações
+    case 3:  animal.get(animal.size()-1).setNumInsensibilizacao(1); System.out.println(indice);
   break;
-  //3 aumenta numer0 de insensibilizações
-
+  
+//4 houve sinais muda pra true = ruim 
+    case 4: animal.get(animal.size()-1).setHouveSinaisObservadosNoAnimal(); System.out.println("\n  houve sinais:  " + animal.get(animal.size()-1).isHouveSinaisObservadosNoAnimal());
+    break;
   //parar abate
     case 0: abate = false; break;
 
   //retorno caso não acerte comando
-  default: System.out.println("Não é um comando válido.");
+  default: System.out.println("Não é um comando válido. 2 para novo animal, 3 adicionar insensibilização \n 0 para sair.");
    }
   }
 
 System.out.println(teclado);
 System.out.println("animais " + animal.size());
-System.out.println("número de insensibilizações do animal " + animal.get(0).getNumInsensibilizacao());
+System.out.println("número de insensibilizações do animal " + animal.get(animal.size()).getNumInsensibilizacao());
+System.out.println("houve sinais: " + animal.get(animal.size()-1).isHouveSinaisObservadosNoAnimal());
     }
 
  System.out.println("Abate: " + abate);
+
 
     }
 

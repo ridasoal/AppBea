@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 
 public class Animais {
     // Atributos dos animais
@@ -65,8 +64,8 @@ public Animais(){
     public boolean isHouveSinaisObservadosNoAnimal() {
         return houveSinaisObservadosNoAnimal;
     }
-    public void setHouveSinaisObservadosNoAnimal(boolean houveSinaisObservadosNoAnimal) {
-        this.houveSinaisObservadosNoAnimal = houveSinaisObservadosNoAnimal;
+    public void setHouveSinaisObservadosNoAnimal() {
+        this.houveSinaisObservadosNoAnimal = true;
     }
     public int getNumeroDeSinaisPorAnimal() {
         return numeroDeSinaisPorAnimal;
@@ -139,12 +138,6 @@ public Animais(){
     }
     public void setObservacoes(String observacoes) {
         this.observacoes = observacoes;
-    }
-    public ArrayList<Animais> getAnimal() {
-        return animal;
-    }
-    public void setAnimal(ArrayList<Animais> animal) {
-        this.animal = animal;
     }
    
     
