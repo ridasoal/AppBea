@@ -17,28 +17,26 @@ public class App {
      teclado = scan.nextInt();
     }
      abate = true;
-          animal.add(indice, null);
+          animal.add(new Animais());
          
   System.out.println();
   System.out.println("Abate iniciado");
   //System.out.println("resposta errada"); 
     
   while(abate == true){
-    System.out.println("Digite outro comando(número): ");
+  System.out.println("Digite outro comando(número): 2 para novo animal, 3 adicionar insensibilização");
   teclado = scan.nextInt();
   switch (teclado){
-  
-   case 2: animal.add(indice, null); System.out.println(indice); indice++; System.out.println(indice); 
-   break;
+    case 2: animal.add(new Animais());System.out.println(indice); indice++; System.out.println(indice); 
+  break;
   //2 aumenta numero de animais
-
-  //ERRO NESSA LINHA 
-  case 3:  animal.get(0).setNumInsensibilizacao(1); System.out.println(indice);
+  
+    case 3:  animal.get(0).setNumInsensibilizacao(1); System.out.println(indice);
   break;
   //3 aumenta numer0 de insensibilizações
 
   //parar abate
-  case 0: abate = false; break;
+    case 0: abate = false; break;
 
   //retorno caso não acerte comando
   default: System.out.println("Não é um comando válido.");

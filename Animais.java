@@ -29,33 +29,8 @@ public class Animais {
     //Observações sobre qqr coisa
     String observacoes;
 
-   //Instanciando o Array   
-   ArrayList<Animais> animal = new ArrayList<Animais>();
-   
-   //Construtor da IDE
-    public Animais(int faixadeIdade, double tempoAteSangria, double tempoDeSangria, int numInsensibilizacao,
-        boolean qualidadeDaInsens, boolean houveSinaisObservadosNoAnimal, int numeroDeSinaisPorAnimal, boolean sinais,
-        boolean vocalizacao, boolean respiracao, boolean postura, boolean oculares, boolean dolorosos, boolean contusao,
-        int traseiro, int dianteiro, int costela, String observacoes, ArrayList<Animais> animal) {
-    this.faixadeIdade = faixadeIdade;
-    this.tempoAteSangria = tempoAteSangria;
-    this.tempoDeSangria = tempoDeSangria;
-    this.numInsensibilizacao = numInsensibilizacao;
-    this.qualidadeDaInsens = qualidadeDaInsens;
-    this.houveSinaisObservadosNoAnimal = houveSinaisObservadosNoAnimal;
-    this.numeroDeSinaisPorAnimal = numeroDeSinaisPorAnimal;
-    this.sinais = sinais;
-    this.vocalizacao = vocalizacao;
-    this.respiracao = respiracao;
-    this.postura = postura;
-    this.oculares = oculares;
-    this.dolorosos = dolorosos;
-    this.contusao = contusao;
-    this.traseiro = traseiro;
-    this.dianteiro = dianteiro;
-    this.costela = costela;
-    this.observacoes = observacoes;
-    this.animal = animal;
+public Animais(){
+
 }
     public int getFaixadeIdade() {
         return faixadeIdade;
