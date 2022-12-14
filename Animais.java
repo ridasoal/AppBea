@@ -12,7 +12,6 @@ public class Animais {
     int numeroDeSinaisPorAnimal;
 
     // Atributos de controle de insensibilzação
-    boolean sinais;
     boolean vocalizacao;
     boolean respiracao;
     boolean postura;
@@ -52,8 +51,8 @@ public Animais(){
     public int getNumInsensibilizacao() {
         return numInsensibilizacao;
     }
-    public void setNumInsensibilizacao(int numInsensibilizacao) {
-        this.numInsensibilizacao = numInsensibilizacao;
+    public void setNumInsensibilizacao() {
+        this.numInsensibilizacao = numInsensibilizacao++;
     }
     public boolean isQualidadeDaInsens() {
         return qualidadeDaInsens;
@@ -72,12 +71,6 @@ public Animais(){
     }
     public void setNumeroDeSinaisPorAnimal(int numeroDeSinaisPorAnimal) {
         this.numeroDeSinaisPorAnimal = numeroDeSinaisPorAnimal;
-    }
-    public boolean isSinais() {
-        return sinais;
-    }
-    public void setSinais(boolean sinais) {
-        this.sinais = sinais;
     }
     public boolean isVocalizacao() {
         return vocalizacao;
