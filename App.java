@@ -25,7 +25,7 @@ public class App {
   while(abate == true){
   System.out.println("Digite outro comando(número): ");
   teclado = scan.nextInt();
-  switch (teclado){
+  switch (teclado){// adicionar controlador para estabelecer qual animal está sendo controlado. modificar o -1 do size()-1
     //2 aumenta numero de animais
     case 2: animal.add(new Animais());System.out.println("Caiu animal número: " + animal.get(animal.size()-1));
     animal.get(animal.size()-1).setNumInsensibilizacao();
@@ -49,6 +49,43 @@ public class App {
 //6 respiração 
     case 6: animal.get(animal.size()-1).setRespiracao(true);
     System.out.println("\n Houve respiração no animal: " + animal.get(animal.size()-1).isRespiracao()); 
+    break;
+
+//7 postura
+    case 7: animal.get(animal.size()-1).setPostura(true);
+    System.out.println("\n Houve tentativa de estabelecer postura: "+animal.get(animal.size()-1).isPostura());
+    break;
+
+//8 oculares
+    case 8: animal.get(animal.size()-1).setOculares(true);
+    System.out.println("\n Houve reflexo ocular: "+animal.get(animal.size()-1).isOculares());
+    break;
+
+// 9 dolorosos
+    case 9: animal.get(animal.size()-1).setDolorosos(true);
+    System.out.println("\n Houve reflexo doloroso: "+animal.get(animal.size()-1).isDolorosos());
+    break;
+
+//10 boolean contusão
+    case 10: animal.get(animal.size()-1).setContusao(true);
+    System.out.println("\n Animal "+animal.get(animal.size()-1)+" com contusão.");
+    break;
+
+//11 traseiro
+    case 11: animal.get(animal.size()-1).setTraseiro();
+    System.out.println("\n Animal com "+animal.get(animal.size()-1).getTraseiro()+ " contusões no traseiro.");
+    break;
+
+//12 dianteiro
+    case 12: animal.get(animal.size()-1).setDianteiro();
+    System.out.println("\n Animal com "+animal.get(animal.size()-1).getDianteiro()+ " contusões no dianteiro.");
+    break;
+
+//13 costela
+    case 13: animal.get(animal.size()-1).setCostela();
+    System.out.println("\n Animal com "+animal.get(animal.size()-1).getCostela()+ " Contusões na costela.");
+    break;
+    
   //parar abate
     case 0: abate = false; break;
 

@@ -111,20 +111,20 @@ public Animais(){
     public int getTraseiro() {
         return traseiro;
     }
-    public void setTraseiro(int traseiro) {
-        this.traseiro = traseiro;
+    public void setTraseiro() {
+        this.traseiro = traseiro++;
     }
     public int getDianteiro() {
         return dianteiro;
     }
-    public void setDianteiro(int dianteiro) {
-        this.dianteiro = dianteiro;
+    public void setDianteiro() {
+        this.dianteiro = dianteiro++;
     }
     public int getCostela() {
         return costela;
     }
-    public void setCostela(int costela) {
-        this.costela = costela;
+    public void setCostela() {
+        this.costela = costela++;
     }
     public String getObservacoes() {
         return observacoes;
